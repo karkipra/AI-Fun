@@ -61,9 +61,8 @@ def chatbot():
 
 ## Updates
 
-- Incorporate audio messages and facebook comments
-- Wrinkled out some issues with the randomness of the 
-]()
+- Incorporate audio messages and facebook comments.
+- Wrinkled out some issues with the randomness of the chatbot.
 
 ## Demo
 
