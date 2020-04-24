@@ -10,7 +10,7 @@ My main motivation for this project stems from wanting to learn more about Natur
 
 The main principle of the chatbot was TF-IDF, aided greatly by [Elasticsearch](https://www.elastic.co/what-is/elasticsearch) and [Bulk API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm). 
 
-https://pathmind.com/images/wiki/tfidf.png
+![https://pathmind.com/images/wiki/tfidf.png]()
 
 ## Demo
 
