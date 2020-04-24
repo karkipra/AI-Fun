@@ -10,8 +10,6 @@ My main motivation for this project stems from wanting to learn more about Natur
 
 The main principle of the chatbot was TF-IDF, aided greatly by [Elasticsearch](https://www.elastic.co/what-is/elasticsearch) and [Bulk API](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm). 
 
-![# Nastya Chatbot
-
 __Update__: Version 2.0 is out! Newer, bigger, and cleaner data.
 
 Main chatbot can be found at [chatbot.ipynb](https://github.com/karkipra/AI-Fun/blob/master/NastyaChatbot/chatbot.ipynb).
