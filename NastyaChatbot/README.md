@@ -26,6 +26,8 @@ The main principle of the chatbot was TF-IDF, aided greatly by [Elasticsearch](h
 
 ## Demo
 
+![Demo](ezgif.com-video-to-gif.gif)
+
 ## Code sample
 
 Below is my implementation of the chatbot function (of course preceded by a lot of data processing)
