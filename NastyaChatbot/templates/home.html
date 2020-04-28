@@ -1,8 +1,9 @@
 <html>
-  <title>Nastya Chatbot</title>
-  <head>
+<title>Nastya Chatbot</title>
+<head>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <!-- CSS Styling -->
+    <!-- CSS Styling -->
     <style>
       body {
         font-family: monospace;
@@ -48,19 +49,20 @@
         line-height: 30px;
       }
       .userText span {
-        background-color: #808080;
+        background-color: deepskyblue;
         padding: 10px;
         border-radius: 2px;
       }
       .botText {
-        color: white;
+
+        color: black;
         font-family: monospace;
         font-size: 17px;
         text-align: left;
         line-height: 30px;
       }
       .botText span {
-        background-color: #4169e1;
+        background-color: lightgrey;
         padding: 10px;
         border-radius: 2px;
       }
@@ -80,28 +82,39 @@
       .box {
         border: 2px solid black;
       }
-    </style>
-  </head>
-  <!-- HTML elements -->
-  <body>
-    <center>
-      <h1>
-        This is Nastya Chatbot, the simulated consciousness of Anastasiia. <br>
-          <a href="https://github.com/karkipra/AI-Fun/tree/master/NastyaChatbot" > Source Code</a>
-      </h1>
-    </center>
-      <div class="boxed">
-       <p class="botText">
-          <center><span>Please type into the chatbox below:</span></center>
-          </p>
-       </div>
-       <div id="userInput">
-         <center><input  id="textInput" type="text" name="msg" placeholder="Message" /></center>
-       </div>
-  </body>
 
-  <!-- Javascript getBotFunction -->
-  <script>
+    </style>
+</head>
+<!-- HTML elements -->
+<body>
+<center>
+    <h1>
+        This is Nastya Chatbox, the uploaded consciousness of Anastasiia <br>
+        <a href="https://github.com/karkipra/AI-Fun/tree/master/NastyaChatbot">Source</a>
+    </h1>
+</center>
+<div class="box"> </div>
+<div class="boxed">
+    <h3>Please type your message below:</h3>
+    <div>
+        <div id="chatbox">
+            <p class="botText">
+                <span>𝚃𝚊𝚙-𝚍𝚊𝚗𝚌𝚒𝚗𝚐 💃
+                    𝚋𝚊𝚕𝚕𝚎𝚛𝚒𝚗𝚊 🤸‍♀️
+                    𝚏𝚊𝚒𝚛𝚢 🧚‍♀️
+                    𝚙𝚛𝚒𝚗𝚌𝚎𝚜𝚜 👸
+                    𝚟𝚎𝚝𝚎𝚛𝚒𝚗𝚊𝚛𝚒𝚊𝚗 🐯</span>
+            </p>
+        </div>
+        <div id="userInput">
+            <input id="textInput" type="text" name="msg" placeholder="Type something here"/>
+        </div>
+    </div>
+</div>
+</body>
+
+<!-- Javascript getBotFunction -->
+<script>
     function getBotResponse() {
       var rawText = $("#textInput").val();
       var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
@@ -123,5 +136,6 @@
         getBotResponse();
       }
     });
-   </script>
+
+</script>
 </html>
