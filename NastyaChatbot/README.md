@@ -1,5 +1,7 @@
 # Nastya Chatbot
 
+__Update__: Version 3.0 is in the works! I'm working on deploying it to Heroku. Check it out here: https://nastya-chatbot.herokuapp.com/. Still more to come!
+
 __Update__: Version 2.0 is out! Newer, bigger, and cleaner data.
 
 Main chatbot can be found at [chatbot.ipynb](https://github.com/karkipra/AI-Fun/blob/master/NastyaChatbot/chatbot.ipynb).
