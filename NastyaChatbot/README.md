@@ -1,6 +1,6 @@
 # Nastya Chatbot
 
-__Update__: Version 3.0 is in the works! I'm working on deploying it to Heroku. Check it out here: https://nastya-chatbot.herokuapp.com/. Still more to come!
+__Update__: Version 3.0 is now available! Check it out here: https://nastya-chatbot.herokuapp.com/
 
 __Update__: Version 2.0 is out! Newer, bigger, and cleaner data.
 
@@ -54,4 +54,4 @@ def chatbot():
 ## Updates
 
 - Incorporate audio messages and facebook comments
-- Wrinkled out some issues with the randomness of the 
+- Wrinkled out some issues with the randomness of the chatbot
