@@ -4,7 +4,7 @@ __Update__: Version 3.0 makes the chatbot compatible with Heroku! However, the H
 
 __Update__: Version 2.0 is out! Newer, bigger, and cleaner data.
 
-Main chatbot can be found at [chatbot.ipynb](https://github.com/karkipra/AI-Fun/blob/master/NastyaChatbot/chatbot.ipynb).
+Main chatbot can be found at [app.py](https://github.com/karkipra/AI-Fun/blob/master/NastyaChatbot/app.py).
 
 ## Details
 
