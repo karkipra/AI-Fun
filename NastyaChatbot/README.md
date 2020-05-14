@@ -20,7 +20,7 @@ All the data was processed in Jupyter Notebook. Please refer to `data_prep.ipynb
 
 ## Demo
 
-![Demo](demo.png)
+![Demo](demo-gif.gif)
 
 ## Installation
 
