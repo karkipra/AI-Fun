@@ -12,19 +12,18 @@ RANDOMNESS = 5
 ES = None
 
 # Bonsai Url
-BONSAI_URL = "https://5a4z2itkpp:bf5bs55wlx@azalea-318561537.us-east-1.bonsaisearch.net:443"
+BONSAI_URL = "https://jl38jgg0mm:kofllfuv9z@juniper-839502280.us-east-1.bonsaisearch.net:443"
 
 # Create an app instance
 app = Flask(__name__)
 
 
-# at the end point /
+# Route to home at end point '/'
 @app.route("/")
 def home():
     return render_template('home.html')
 
 
-# GET request from user
 @app.route("/get")
 def get_bot_response():
     """
@@ -84,7 +83,7 @@ def create_elasticsearch(bonsai):
         'http_auth': (auth[0], auth[1])
     }]
 
-    # Instantiate the new Elasticsearch connection:
+    # Instantiate the new Elasticsearch connection
     return Elasticsearch(es_header)
 
 
@@ -95,7 +94,7 @@ def bulk_data(es):
     returns - None
     """
     # using Pickled Data for optimization
-    with open('data/train_data.pickle', 'rb') as handle:
+    with open('data/train_data2.pickle', 'rb') as handle:
         texts_dict = pickle.load(handle)
 
     bulk(es, texts_dict, index='chatbot-events', doc_type='clue', raise_on_error=True)
