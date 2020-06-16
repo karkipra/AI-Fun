@@ -1,5 +1,7 @@
 # Nastya Chatbot
 
+__Update__: Version 4.0 works perfectly with Heroku! Please find the app here: [Nastya Chatbot](nastya-chatbot.herokuapp.com). I was able to cut down on the number of documents and figure out how to instantiate Bulk API only once to prevent massive data usage.  
+
 __Update__: Version 3.0 makes the chatbot compatible with Heroku! However, the Heroku add-on doesn't allow much data usage in their free mode hehe so I'm sticking to local development for now. Stay tuned! 
 
 __Update__: Version 2.0 is out! Newer, bigger, and cleaner data.

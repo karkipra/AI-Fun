@@ -8,15 +8,14 @@ import pickle
 # Constant for randomness of bot results
 RANDOMNESS = 5
 
-# Global Elasticsearch object
-ES = None
+# Elasticsearch Global Variable
+#ES = None
 
 # Bonsai Url
-BONSAI_URL = "https://jl38jgg0mm:kofllfuv9z@juniper-839502280.us-east-1.bonsaisearch.net:443"
+BONSAI_URL = "https://t77ivnn4ui:au7zbeuhmg@rowan-373924717.us-east-1.bonsaisearch.net:443"
 
 # Create an app instance
 app = Flask(__name__)
-
 
 # Route to home at end point '/'
 @app.route("/")
@@ -41,6 +40,15 @@ def chat(user_text):
     params - user_text (String)
     returns - response (String)
     """
+
+    # Create elasticsearch instance
+    ES = create_elasticsearch(BONSAI_URL)
+
+    # Bulk the indices of the datas
+    if not ES.indices.exists(index='chatbot-events'):
+        # Index doesn't exist yet - we do not want to load index for no reason
+        bulk_data(ES)
+
     # Get response from ES
     response = ES.search(index='chatbot-events', doc_type='clue', body={"query": {
         "match": {
@@ -99,11 +107,6 @@ def bulk_data(es):
 
     bulk(es, texts_dict, index='chatbot-events', doc_type='clue', raise_on_error=True)
 
-
 if __name__ == "__main__":
-    # Create elasticsearch instance
-    ES = create_elasticsearch(BONSAI_URL)
-    # Bulk the indices of the data
-    bulk_data(ES)
     # runs the flask app
     app.run(debug=True)
