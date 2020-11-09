@@ -2,10 +2,6 @@
 
 This is an AI that plays flappy bird, powered by Pygame and NEAT.
 
-# Description
-
 # Demo
 
-# Code Sample
-
-# References
+[!demo](ezgif.com-gif-maker.gif)
